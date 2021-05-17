@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+    const laiSuat = parseFloat(3 * 0.01);
+    let soTienGui = parseFloat(prompt("Nhập số tiền vay: "));
+    let soThang = parseInt(prompt("Nhập số tháng vay:"));
+    let i;
+
+    for (i = 0; i < soThang; i++) {
+        soTienGui = soTienGui + soTienGui * laiSuat;
+
+    }
+    let kq = Math.round(soTienGui * 100) / 100;
+    alert(kq);
+</script>
+</body>
+</html>
